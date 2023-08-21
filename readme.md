@@ -5,24 +5,32 @@ mi avvicino al tavolo
 mi siedo sulla sedia
 sposto la sedia
 
+-finchè ho buste
+
 - apro una busta
+- prendo le carte in mano
+- le controllo
+- SE figurina = rotta/dannegiata - aggiungi a scarti
 
-  - prendo le carte in mano
-  - le controllo
+            - ALTRIMENTI {
 
-    - SE figurina = rotta/dannegiata
+                tieni
 
-      - aggiungi a scarti
+                - SE carta nuova aggiungi a "Album principale"
 
-    - ALTRIMENTI figurina = integra tieni
+                - ALTRIMENTI // carta = doppiona
+                    aggiungi ALBUM scambi
 
-      - SE carta nuova aggiungi a ALBUM principale
+                    - SE carta in album scambi >= 2
+                        scambia con amico
 
-      - ALTRIMENTI carta = doppiona aggiungi ALBUM scambi
-        SE carta in album 2 = >= 2 scambia con amico
-        ALTRIMENTI tieni
+                    - ALTRIMENTI
+                        tieni
 
-- riciclo busta
+                }
+
+  - riciclo busta
+
 - apro una busta
 
   - prendo le carte in mano
@@ -45,8 +53,10 @@ sposto la sedia
 - riciclo busta
 
 - apro una busta in cerca di drago x
+
   - prendo le carte in mano
   - le controllo
+
     - SE figurina = drago x smetti di comprare
 
     - ALTRIMENTI figurina = integra tieni
